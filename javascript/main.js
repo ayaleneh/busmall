@@ -155,8 +155,8 @@ let displayImages = function() {
       }
       if(SecondImage.id!==funny_image[number].id)
       {
-      console.log("second image id is"+SecondImage.id)
-      console.log("third image id is"+funny_image[number].id)
+        console.log("second image id is"+SecondImage.id)
+        console.log("third image id is"+funny_image[number].id)
         ThirdImage=randomimage
       }
       else{
