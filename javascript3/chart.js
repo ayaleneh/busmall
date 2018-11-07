@@ -4,8 +4,10 @@ let elChartContainer = document.getElementById('chart-container')
 let ctx = elChartContainer.getContext('2d')
 
 function displayChart() {
-    let elChart = new Chart(ctx, {
+ 
+  let elChart = new Chart(ctx, {
     type: 'bar',
+    
     data: {
       labels: [funny_image[0].title, funny_image[1].title,
         funny_image[2].title,funny_image[3].title

@@ -1,5 +1,6 @@
 'use strict'
 let funny_image = []
+let public_counter=0
 let container = document.getElementById('first_div')
 let access_fun = document.getElementsByClassName('funny-image')
 
@@ -56,7 +57,12 @@ let clickHandler = function(event) {
     ThirdImage.clicked++
   }
   displayImages()
-  displayChart()
+  public_counter++
+  if(public_counter===10){
+    displayChart()
+  }
+  console.log('public counter is'+public_counter)
+ 
 }
 let counter
 let stored_value=[]
@@ -207,3 +213,4 @@ displayImages()
 function myfunction(){
   displayImages()
 }
+
